@@ -6,7 +6,7 @@ app = Chalice(app_name='stringconverterapi')
 @app.route('/')
 def index():
     return {'hello': 'world'}
-
+@app.route('/apiconverter/{text}')
 def process_string(text):
     
     ''' The  function takes as input a string and adds a copy right symbol
